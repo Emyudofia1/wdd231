@@ -116,13 +116,13 @@ footer {
     padding: 20px;
 }
 
-.box {
+/* .box {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
     width: 300px;
     background: white;
     border-radius: 8px;
     padding: 20px;
-}
+} */
 
 .box h3 {
     color: white;
@@ -130,3 +130,4 @@ footer {
     padding: 10px;
     border-radius: 5px;
 }
+
