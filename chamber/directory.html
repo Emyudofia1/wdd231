@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibom Chamber of Commerce Directory</title>
+    <meta name="description" content=" Ibom Chamber of Commerce Directory">
+    <meta name="author" content="Emediong Udofia">
+    <link rel="stylesheet" href="styles/directory-base.css">
+    <link rel="stylesheet" href="styles/directory-larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/fetchMembers.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="portal home page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Godswill_Akpabio_International_Stadium_-_front_view.jpg/1280px-Godswill_Akpabio_International_Stadium_-_front_view.jpg"> 
+    <meta property="og:url" content="https://emyudofia1.github.io/wdd231">
+</head>
+<body>
+    <header>
+        <div class="hero-wrapper">
+            <div class="hero-cta">
+                <h1>Ibom Chamber of Commerce</h1>
+                <p><a href="join.html">Join Us</a></p>
+            </div>
+        </div>
+    </header>
+
+    <button id="nav-btn"></button>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="../week01/chamber-site-plan.html">Site Plan</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Form</a>
+    </nav>
+
+    <main>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <hr>
+        <article class="directory-container grid">
+            <!-- Directory items will be injected here by JavaScript -->
+        </article>
+    </main>
+    <footer>
+        <div><p id="copyright"></p>🌼Ibom Chamber of Commerce🌼</div>
+        <p id="lastModified"></p>
+        <p>info@Ibomachamber.com</p>
+        <p>WDD231 Project | BYU</p>
+    </footer>
+        <script src="../scripts/getDates.js"></script>
+</body>
+</html>

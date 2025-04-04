@@ -1,0 +1,272 @@
+/* Global reset and box-sizing to ensure consistent sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for overall page aesthetics */
+body {
+    margin: 0% auto;
+    font-family: "Roboto", sans-serif;
+    background-color: azure;
+}
+
+/* Grid display for header to align items properly */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/* Responsive hero image setup */
+.hero-wrapper {
+    margin-top: -17px; /* Ensure this negative margin is necessary */
+    position: relative;
+    background-image: url('../images/Hand_sculpture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    padding-top: 200px;
+    width: 313px;
+}
+
+
+/* Text alignment for CTA within the hero wrapper */
+.hero-cta {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    width: 90%;
+    padding: 2px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.hero-cta h1 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-cta p {
+    margin: 0;
+}
+
+.hero-cta a {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+
+/* Grid display for section wrappers */
+.section-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1% auto;
+    text-align: center;
+}
+
+/* Consistent text alignment for spotlight wrapper */
+.spotlight-wrapper {
+    text-align: center;
+    padding: 1rem;
+    background-color: red;
+}
+
+/* Grid setup for spotlight items */
+#spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-self: center;
+    padding: 30px;
+    color: indigo;
+}
+
+#spotlight h3 {
+    color: black;
+}
+
+/* Grid configuration for spotlight detail */
+.spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Background color for paragraphs inside spotlight */
+.spotlight p {
+    background-color: #ecedef;
+}
+
+/* Background styling for current events and weather sections */
+.current-event, .weather {
+    background-color: beige;
+}
+
+.current-event {
+    color: indigo;
+    padding: 20px;
+}
+
+#event-banner {
+    background-color: beige;
+    padding: 20px;
+}
+
+/* Basic grid setup adjusted for responsiveness */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Simplified grid setup for responsiveness */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Span styling for emphasis and spacing */
+span {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+/* Unified menu background styling */
+.menu {
+    background-color: #36454f;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Block display for navigation links with consistent styling */
+nav {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+/* Styling for navigation links */
+nav a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 300;
+    color: #eceeef;
+    text-decoration: none;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* styling for information section */
+
+#information {
+    padding: 1rem;
+    background-color: beige;
+    text-align: center;
+    color: indigo;
+}
+
+#information h3 {
+    color: black;
+    padding: 10px;
+}
+
+/* Hover effects for links */
+a:hover, ul li a:hover {
+    color: pink; /* Unified hover color */
+}
+
+/* List item display for inline navigation */
+ul li {
+    display: inline-block;
+}
+
+/* Footer styling for color consistency and layout */
+footer {
+    color: #eceeef;
+    display: grid;
+    background-color: #36454f;
+    text-align: center;
+}
+
+/* Responsive directory container setup */
+.directory-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+    font-size: small;
+}
+
+/* Styling for links within the directory container */
+.directory-container a {
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+/* Detailed item styling within the directory */
+.directory-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bbb;
+    text-align: center;
+}
+
+/* Image styling for directory items */
+.directory-item img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #bbb;
+}
+
+/* Text styling within directory items */
+.directory-item h3, .directory-item p, .directory-item a {
+    margin: 0.1rem;
+}
+
+/* Flex layout for list view in the directory */
+.directory-container.list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid setup for directory items in list view */
+.directory-container.list .directory-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+/* Hiding images in list view for directory items */
+.directory-container.list .directory-item img {
+    display: none;
+}
+
+/* Styling for the event section close button */
+.event-section button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: black; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
