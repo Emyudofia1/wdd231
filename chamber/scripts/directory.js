@@ -1,6 +1,16 @@
 const url = 'https://unclejoefx.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
+// Display Current Date and Time
+const updateDateTime = () => {
+    const now = new Date();
+    const dateTimeEl = document.getElementById('last-updated');
+    if (dateTimeEl) {
+      dateTimeEl.textContent = `Last updated: ${now.toLocaleString()}`;
+    }
+  };
+
+
 async function getCompanies() {
     try {
         const response = await fetch(url);
@@ -43,3 +53,4 @@ function displayMembers(members) {
 }
 
 getCompanies();
+

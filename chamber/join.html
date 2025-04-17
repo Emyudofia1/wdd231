@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibom Chamber of Commerce Registration Plan</title>
+    <meta name="description"
+        content="This site promotes the business interest and opportunities for both the state and the tourist who visit the city of Uyo and promotes an insight about the area, attracting aditional business, tourism and people to know the city and all the opportunities inside the city.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join-base.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
+    <link rel="stylesheet" href="styles/join-menu.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getDark.js"></script>
+    <meta name="author" content="Emediong Godwin Udofia">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Ibom Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://en.wikipedia.org/wiki/Calabar#/media/File:Hand_sculpture_roundabout,_Calabar,_Cross_River_state2.jpg">
+    <meta property="og:url" content="https://https://emyudofia1.github.io/wdd231/Chamber/">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="Uwa Joseph's profile" width="75" height="100">
+        <span>Ibom Chamber Of Commerce</span>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="../week01/chamber-site-plan.html">Site Plan</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+    </nav>
+    <main class="grid-wrapper">
+        <aside class="membership-benefits">
+            <h2>Membership Levels & Benefits</h2>
+            <div class="membership-card">
+                <h3>NP Membership - Free</h3>
+                <p>Available for non-profits organizations</p>
+                <p>Public events access</p>
+                <p>Basic support services</p>
+                <!-- Modal Trigger -->
+                <button class="open-modal" data-modal="modal-np">View Benefits</button>
+
+                <!-- Modal Structure -->
+                <div id="modal-np" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="modal-np">&times;</span>
+                    <h3>NP Membership - Free</h3>
+                    <ul>
+                    <li>Available for nonprofit organizations</li>
+                    <li>Public events access</li>
+                    <li>Basic support services</li>
+                    </ul>
+                </div>
+                </div>   
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership - $99/month</h3>
+                <p>Includes all NP Membership benefits</p>
+                <p>Two advertisement post per week</p>
+                <p>Access to exclusive webinars</p>
+                <p>Free training sessions by expertise</p>
+                <p>Intensive care</p>
+                <button class="open-modal" data-modal="modal-np">View Benefits</button>
+                <!-- Modal for Bronze -->
+            <div id="modal-bronze" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="modal-bronze">&times;</span>
+                    <h3>Bronze Membership - $99/month</h3>
+                    <ul>
+                        <li>Includes all NP Membership benefits</li>
+                        <li>Two advertisement posts per week</li>
+                        <li>Access to exclusive webinars</li>
+                        <li>Free training sessions by expertise</li>
+                        <li>Intensive care</li>
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+            <div class="membership-card">
+                <h3>Silver Membership - $499/month</h3>
+                <p>Includes all Bronze Membership benefits</p>
+                <p>Ten advertisement post per week.</p>
+                <p>VIP Treatment</p>
+                <p>Discounts of 20% off on every event attended</p>
+
+                <button class="open-modal" data-modal="modal-np">View Benefits</button>
+
+            <div id="modal-silver" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="modal-silver">&times;</span>
+                    <h3>Silver Membership - $499/month</h3>
+                    <ul>
+                        <li>Includes all Bronze Membership benefits</li>
+                        <li>Ten advertisement posts per week</li>
+                        <li>VIP Treatment</li>
+                        <li>20% event discount</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="membership-card">
+                <h3>Gold Membership - $999/month</h3>
+                <p>Includes all Silver Membership benefits</p>
+                <p>VVIP access card to all events</p>
+                <p>Twenty advertisement post per week.</p>
+                <p>30% event discounts with annual trip on summer holidays</p>
+
+                <button class="open-modal" data-modal="modal-np">View Benefits</button>
+                <!-- Modal for Gold -->
+            <div id="modal-gold" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal" data-modal="modal-gold">&times;</span>
+                    <h3>Gold Membership - $999/month</h3>
+                    <ul>
+                        <li>Includes all Silver Membership benefits</li>
+                        <li>VVIP access card to all events</li>
+                        <li>Twenty advertisement posts per week</li>
+                        <li>30% discounts with summer holiday trip</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </aside>
+        <form action="thankyou.html" class="join">
+            <h3>Join Us</h3>
+            <fieldset>
+                <legend><strong>Applicant Information</strong></legend>
+                <label for="fname"> First Name <input type="text" name="fname" id="fname" required> </label>
+                <label for="lname"> Last name <input type="text" name="lname" id="lname" required> </label>
+                <label for="position"> Position <input type="text" name="position" id="position" pattern="^[a-zA-Z\s\-]{7,}$"></label>
+                <label for="email">Email <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
+                <label for="phone"> Phone <input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Organization Information</strong></legend>
+                <label for="organization"> Organization Name <input type="text" name="organization" id="organization" required></label>
+                <label for="org-description"> Organization Description <textarea name="org-description" id="org-description"></textarea> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Membership</strong></legend>
+                <label for="np-level"> <input type="radio" name="level" id="np-level" required> NP Membership </label>
+                <label for="bronze-level"> <input type="radio" name="level" id="bronze-level" required> Bronze Membership </label>
+                <label for="silver-level"> <input type="radio" name="level" id="silver-level" required> Silver Membership </label>
+                <label for="gold-level"> <input type="radio" name="level" id="gold-level" required> Gold Membership </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+
+            <input type="submit" name="submit" id="submit" value="Submit Application">
+        </form>
+    </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.295784788477!2d8.0402216!3d5.0557234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d5813586afc87%3A0x6734e8be23eaf5d8!2sIbom%20Hotel%20%26%20Golf%20Resort!5e0!3m2!1sen!2sng!4v1744522465673!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+        <div class="footer-left"> 
+            <strong>Ibom Chamber of Commerce</strong><br>
+            10 Udo Udoma Avenue<br>
+            Uyo, Akwa Ibom 520001<br>
+            info@ibomachamber.com<br>
+            (234) 803-123-4567
+          </div>
+          <div class="footer-icons">
+            <img src="images/youtube.jpg" alt="YouTube icon">
+            <img src="images/twiter.png" alt="Twitter icon">
+            <img src="images/linkedin.jpg" alt="LinkedIn icon">
+          </div>
+          <div class="footer-right">
+            <p>WDD231 Class Project<br>Emediong Udofia</p>
+            <p>&copy; 2025 Ibom Chamber of Commerce</p>
+            <p id="last-updated"></p>
+      
+          </div>
+    </footer>
+    <script src="../scripts/getDates.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+
+</html>

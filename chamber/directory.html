@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibom Chamber of Commerce Directory</title>
     <meta name="description" content=" Ibom Chamber of Commerce Directory">
-    <meta name="author" content="Emediong Udofia">
-    <link rel="stylesheet" href="styles/directory-base.css">
-    <link rel="stylesheet" href="styles/directory-larger.css">
+    <meta name="author" content="Emediong Godwin Udofia">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/directory-base.css">
+    <link rel="stylesheet" href="styles/directory-larger.css">
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/fetchmembers.js" defer></script>
+    <script src="scripts/fetchMembers.js" defer></script>
+    <script src="scripts/theme-toggle.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -21,25 +23,32 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://emyudofia1.github.io/wdd231/chamber/images/Godswill_Akpabio_International_Stadium_-_front_view.jpg">
     <meta property="og:url" content="https://emyudofia1.github.io/wdd231/chamber/directory.html">
-
 </head>
+
 <body>
     <header>
-        <div class="hero-wrapper">
-            <div class="hero-cta">
-                <h1>Ibom Chamber of Commerce</h1>
-                <p><a href="join.html">Join Us</a></p>
-            </div>
+        
         </div>
-    </header>
+        <div class="top-bar">
+            <div class="logo">
+              <img src="images/favicon.ico" alt="Ibom">
+              <div>
+                <h1>Ibom</h1>
+                <p>Chamber of Commerce</p>
+              </div>
+            </div>
+            <nav aria-label="Main navigation">
+              <a href="index.html" aria-current="page">Home</a>
+              <a href="../week01/chamber-site-plan.html">Site Plan</a>
+              <a href="directory.html">Directory</a>
+              <a href="join.html">Join</a>
+              <a href="discover.html">Discover</a>
+              <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+            </nav>
+          </div>
 
-    <button id="nav-btn"></button>
-    <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="../week01/chamber-site-plan.html">Site Plan</a>
-        <a href="discover.html">Discover</a>
-        <a href="join.html">Form</a>
-    </nav>
+
+    </header>
 
     <main>
         <div class="menu">
@@ -51,13 +60,35 @@
             <!-- Directory items will be injected here by JavaScript -->
         </article>
     </main>
-    <footer>
-        <div><p id="copyright"></p>🌼Ibom Chamber of Commerce🌼</div>
-        <p id="lastModified"></p>
-        <p>info@Ibomachamber.com</p>
-        <p>WDD231 Project | BYU</p>
-        <script src="../scripts/getdates.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <strong>Ibom Chamber of Commerce</strong><br>
+                10 Udo Udoma Avenue<br>
+                Uyo, Akwa Ibom 520001<br>
+                info@ibomachamber.com<br>
+                (234) 803-123-4567
+            </div>
+    
+            <div class="footer-social">
+                <a href="#"><img src="images/youtube.jpg" alt="YouTube" width="32"></a>
+                <a href="#"><img src="images/twiter.png" alt="Twitter" width="32"></a>
+                <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn" width="32"></a>
+            </div>
+    
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p>Emediong Udofia</p>
+                <p>&copy; 2025 Ibom Chamber of Commerce</p>
+                <div class="footer-meta">
+                <p>Last Modification:<span id="lastModified"></span></p>
+                </div>
+               
+            </div>
+        </div>
+        <script src="scripts/getdates.js"></script>
     </footer>
-        
+    
 </body>
+
 </html>

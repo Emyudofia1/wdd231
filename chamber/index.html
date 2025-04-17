@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tinapa Chamber of Commerce">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Emediong Godwin Udofia">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Welcome to the Ibom Chamber of Commerce Explore local businesses, upcoming events, and connect with the vibrant Uyo community.">
+  <title>Ibom Chamber of Commerce</title>
+  <!-- <script src="scripts/spotLight.js" defer></script> -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <script src="scripts_new/spotlight.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/edited.css">
+  <meta property="og:title" content="Akwa Ibom State, Nigeria">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://en.wikipedia.org/wiki/Calabar#/media/File:Hand_sculpture_roundabout,_Calabar,_Cross_River_state2.jpg">
+<meta property="og:url" content="https://emyudofia1.github.io/wdd231/">
+</head>
+
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="images/favicon.ico" alt="Ibom ">
+        <div>
+          <h1>Ibom</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#" aria-current="page">Home</a>
+        <a href="../week01/chamber-site-plan.html">Site Plan</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join Us</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+      </nav>
+    </div>
+    
+  </header>
+
+  
+
+  <section class="hero">
+    <img src="images_new/hero.jpeg" alt="Scalable, responsive hero image" />
+    <button class="cta-button">Ibom Chamber of commerce, Where Businesses Thrives..</button>
+  </section>
+
+  <main>
+    <h2>Home</h2>
+
+    <section class="info-cards" aria-labelledby="events-weather-section">
+      <h2 id="events-weather-section" class="visually-hidden">Events and Weather</h2>
+      <div class="card">
+        <h3>Events</h3>
+        <p>Annual Business Summit, May 12th, 2025.</p>
+        <p>Join us for a meet and greet, July 5th, 2025.</p>
+        <p>Ibom Businees week, September 5th - 10th, 2025.</p>
+      </div>
+
+      <section class="card weather" aria-labelledby="weather-title">
+        <h3 id="weather-title">Current Weather</h3>
+        <figure>
+          <img id="weather-icon" src="" alt="Weather Icon" />
+          <figcaption id="current-desc">Loading...</figcaption>
+        </figure>
+        <p id="weather-info"></p>
+      </section>
+      
+      <section class="card" aria-labelledby="forecast-title">
+        <h3 id="forecast-title">Weather Forecast</h3>
+        <ul id="forecast-list"></ul>
+      </section>
+
+     
+    <div class="spotlight-wrapper">
+      <h3>Member Spotlight</h3>
+      <section id="spotlight">
+        <!-- Dynamic spotlight members will be displayed here -->
+      </section>
+    </div>
+      
+
+
+    </section>
+
+    <section class="businesses" aria-labelledby="business-section">
+      <h2 id="business-section" class="visually-hidden">Featured Businesses</h2>
+      <div class="business-card">
+        <img src="images/ibomair.png" alt="Business logo" width="100">
+        <div>
+          <h3>Ibom Air Travels</h3>
+          <p>Business Tag Line</p>
+          <p><strong>Email:</strong> info@ibomair.com</p>
+          <p><strong>Phone:</strong> 08002243234</p>
+          <p><strong>URL:</strong> mybusiness.com</p>
+        </div>
+      </div>
+      <div class="business-card">
+        <img src="images/ibom_icon.png" alt="Business logo" width="100">
+        <div>
+          <h3>Ibom Icom Hotels and Golf Resort</h3>
+          <p>Business Tag Line</p>
+          <p><strong>Email:</strong> ibomiconhotel@gmail.com</p>
+          <p><strong>Phone:</strong> 07022322412</p>
+          <p><strong>URL:</strong> http://www.ibomhotelandgolfresort.com/</p>
+        </div>
+      </div>
+      <div class="business-card">
+        <img src="images/tropicanamall.png" alt="Business logo" width="100">
+        <div>
+          <h3>Tropicana Shopping Mall</h3>
+          <p>Business Tag Line</p>
+          <p><strong>Email:</strong> info@gmail.com</p>
+          <p><strong>Phone:</strong> 800-555-1234</p>
+          <p><strong>URL:</strong> </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <strong>Ibom Chamber of Commerce</strong><br>
+      10 Udo Udoma Avenue<br>
+      Uyo, Akwa Ibom 520001<br>
+      info@ibomachamber.com<br>
+      (234) 803-123-4567
+    </div>
+    <div class="footer-icons">
+      <img src="images/youtube.jpg" alt="YouTube icon">
+      <img src="images/twiter.png" alt="Twitter icon">
+      <img src="images/linkedin.jpg" alt="LinkedIn icon">
+    </div>
+    <div class="footer-right">
+      <p>WDD231 Class Project<br>Emediong Udofia</p>
+      <p>&copy; 2025 Ibom Chamber of Commerce</p>
+      <p id="last-updated"></p>
+
+    </div>
+  </footer>
+
+  <script src="scripts_new/originalscript.js"></script>
+  <script src="scripts_new/uyo-weather.js"></script>
+  
+</body>
+
+</html>

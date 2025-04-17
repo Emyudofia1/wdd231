@@ -18,11 +18,11 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    nav {
+    /* nav {
         display: flex;
         justify-content: space-around;
         width: 100%;
-    }
+    } */
 
 
     .hero-wrapper {
@@ -32,3 +32,122 @@
         height: auto;
     }
 }
+
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.footer-contact,
+.footer-social,
+.footer-meta {
+    margin: 0.5rem;
+}
+
+.footer-social img {
+    margin: 0 0.25rem;
+    border-radius: 5px;
+}
+
+
+/* new header design */
+
+header {
+    /* background: #e1e9f0; */
+    background: #003366;
+    padding-bottom: 1rem;
+  }
+  
+  .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    /* color: #003366; */
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    /* color: #003366; */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* .hero {
+    position: relative;
+    margin-top: 1rem;
+  }
+  
+  .hero img {
+    border-radius: 8px;
+  }
+   */
+
+
+.hero {
+  position: relative;
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+  .cta-button {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

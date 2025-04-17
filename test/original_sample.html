@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the Timbuktu Chamber of Commerce – Explore local businesses, upcoming events, and connect with the vibrant Timbuktu community.">
+  <title>Timbuktu Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/edited.css">
+</head>
+
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="images/logo-placeholder.png" alt="Timbuktu ">
+        <div>
+          <h1>Timbuktu</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#" aria-current="page">Home</a>
+        <a href="../week01/chamber-site-plan.html">Site Plan</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+      </nav>
+    </div>
+    <!-- <div class="hero">
+      <img src="images/hero-placeholder.jpg" alt="Timbuktu Chamber event with a scenic backdrop">
+      <button class="cta-button">Keynote Tickets</button>
+    </div> -->
+  </header>
+
+  
+  <!-- HERO SECTION (separate from header) -->
+  <!-- <section class="hero">
+    <img src="images/hero.jpg" alt="Scalable, responsive hero image" />
+    <button class="cta-button">Keynote Tickets</button>
+  </section> -->
+
+  <section class="hero">
+    <img src="images/hero.jpeg" alt="Scalable, responsive hero image" />
+    <button class="cta-button">Ibom Chamber of commerce, Where Businesses Thrives..</button>
+  </section>
+
+  <main>
+    <h2>Home</h2>
+
+    <section class="info-cards" aria-labelledby="events-weather-section">
+      <h2 id="events-weather-section" class="visually-hidden">Events and Weather</h2>
+      <div class="card">
+        <h3>Events</h3>
+        <p>Upcoming events will be listed here.</p>
+      </div>
+      <!-- <section class="card weather" aria-labelledby="weather-title">
+        <h3 id="weather-title">Current Weather</h3>
+        <p><strong>75°F</strong><br>Partly Cloudy<br>High: 85°F<br>Low: 52°F<br>Humidity: 34%<br>Sunrise: 7:30am<br>Sunset: 9:59pm</p>
+        <p id="weather-info"></p>
+      </section>
+      <section class="card" aria-labelledby="forecast-title">
+        <h3 id="forecast-title">Weather Forecast</h3>
+        <p>Today: <strong>90°F</strong><br>Wednesday: <strong>89°F</strong><br>Thursday: <strong>68°F</strong></p>
+      </section> -->
+
+      <section class="card weather" aria-labelledby="weather-title">
+        <h3 id="weather-title">Current Weather</h3>
+        <figure>
+          <img id="weather-icon" src="" alt="Weather Icon" />
+          <figcaption id="current-desc">Loading...</figcaption>
+        </figure>
+        <p id="weather-info"></p>
+      </section>
+      
+      <section class="card" aria-labelledby="forecast-title">
+        <h3 id="forecast-title">Weather Forecast</h3>
+        <ul id="forecast-list"></ul>
+      </section>
+      
+
+
+    </section>
+
+    <section class="businesses" aria-labelledby="business-section">
+      <h2 id="business-section" class="visually-hidden">Featured Businesses</h2>
+      <div class="business-card">
+        <img src="images/ibomair.png" alt="Business logo" width="100">
+        <div>
+          <h3>Ibom Air Travels</h3>
+          <p>Business Tag Line</p>
+          <p><strong>Email:</strong> info@gmail.com</p>
+          <p><strong>Phone:</strong> 800-555-1234</p>
+          <p><strong>URL:</strong> mybusiness.com</p>
+        </div>
+      </div>
+      <div class="business-card">
+        <img src="images/ibom_icon.png" alt="Business logo" width="100">
+        <div>
+          <h3>Ibom Icom Hotels and Golf Resort</h3>
+          <p>Business Tag Line</p>
+          <p><strong>Email:</strong> info@gmail.com</p>
+          <p><strong>Phone:</strong> 800-555-1234</p>
+          <p><strong>URL:</strong> mybusiness.com</p>
+        </div>
+      </div>
+      <div class="business-card">
+        <img src="images/tropicanamall.png" alt="Business logo" width="100">
+        <div>
+          <h3>Tropicana Shopping Mall</h3>
+          <p>Business Tag Line</p>
+          <p><strong>Email:</strong> info@gmail.com</p>
+          <p><strong>Phone:</strong> 800-555-1234</p>
+          <p><strong>URL:</strong> http://www.ibomhotelandgolfresort.com/</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <!-- <p><strong>Timbuktu Chamber of Commerce</strong><br>10 Rue De La Paix<br>Timbuktu, Mali 999<br>info@timbuktucc.org<br>(223) 555-2300</p> -->
+      <strong>Ibom Chamber of Commerce</strong><br>
+      10 Udo Udoma Avenue<br>
+      Uyo, Akwa Ibom 520001<br>
+      info@ibomachamber.com<br>
+      (234) 803-123-4567
+    </div>
+    <div class="footer-icons">
+      <img src="images/youtube.jpg" alt="YouTube icon">
+      <img src="images/twiter.png" alt="Twitter icon">
+      <img src="images/linkedin.jpg" alt="LinkedIn icon">
+    </div>
+    <div class="footer-right">
+      <p>WDD231 Class Project<br>Emediong Udofia</p>
+      <p>&copy; 2025 Ibom Chamber of Commerce</p>
+      <p id="last-updated"></p>
+
+    </div>
+  </footer>
+
+  <script src="scripts/originalscript.js"></script>
+  <script src="scripts/uyo-weather.js"></script>
+  
+</body>
+
+</html>

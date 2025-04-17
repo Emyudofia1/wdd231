@@ -13,12 +13,12 @@ body {
 }
 
 /* Grid display for header to align items properly */
-header {
+/* header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     padding-top: 1rem;
-}
+} */
 
 /* Responsive hero image setup */
 .hero-wrapper {
@@ -150,22 +150,22 @@ span {
 }
 
 /* Block display for navigation links with consistent styling */
-nav {
+/* nav {
     display: block;
     margin: 0 auto;
     width: 100%;
     align-items: center;
-}
+} */
 
 /* Styling for navigation links */
-nav a {
+/* nav a {
     display: block;
     text-align: center;
     padding: 0.5rem;
     font-weight: 300;
     color: #eceeef;
     text-decoration: none;
-}
+} */
 
 #main {
     display: grid;
@@ -198,12 +198,57 @@ ul li {
 }
 
 /* Footer styling for color consistency and layout */
-footer {
+/* footer {
     color: #eceeef;
     display: grid;
     background-color: #36454f;
     text-align: center;
+} */
+
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
 }
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* .footer-contact,
+.footer-social,
+.footer-meta {
+    margin: 0.5rem;
+} */
+
+.footer-social img {
+    margin: 0 0.25rem;
+    border-radius: 5px;
+}
+
+.footer-meta p {
+    font-size: 1rem; /* or try 0.95rem if you want it slightly smaller */
+    margin: 0.2rem 0;
+}
+
+.footer-meta p,
+#lastModified,
+#lastUpdated {
+    font-size: 0.9rem !important;
+    margin: 0.2rem 0;
+}
+
 
 /* Responsive directory container setup */
 .directory-container {
@@ -270,3 +315,134 @@ footer {
     border: none;
     cursor: pointer;
 }
+
+/* new stuff */
+
+.header-extras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f8ff;
+    color: #222;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .theme-toggle {
+    background-color: #333;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #555;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode .header-extras {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode .theme-toggle {
+    background-color: #e0e0e0;
+    color: #111;
+  }
+  
+
+
+  /* new header design */
+
+ header {
+    /* background: #e1e9f0; */
+    background: #003366;
+    padding-bottom: 1rem;
+  }
+  
+  .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    /* color: #003366; */
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    /* color: #003366; */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* .hero {
+    position: relative;
+    margin-top: 1rem;
+  }
+  
+  .hero img {
+    border-radius: 8px;
+  }
+   */
+
+
+.hero {
+  position: relative;
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+  .cta-button {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
