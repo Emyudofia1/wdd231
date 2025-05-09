@@ -37,7 +37,7 @@
   /* ===== Header ===== */
   header {
     /* background: #e1e9f0; */
-    background: #003366;
+    background: palevioletred;
     padding-bottom: 1rem;
   }
   
@@ -160,7 +160,7 @@
   footer {
     margin-top: 2rem;
     padding: 1rem;
-    background: #003366;
+    background: pink;
     color: white;
     display: flex;
     flex-direction: column;
