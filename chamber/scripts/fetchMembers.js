@@ -1,48 +1,64 @@
-const baseURL = 'https://unclejoefx.github.io/wdd230/chamber/';
-const linksURL = baseURL + 'data/members.json';
+const displayArea = document.querySelector('#membersContainer');
+const url = './data/members.json';
 
-document.addEventListener('DOMContentLoaded', () => {
-    const fetchData = async () => {
-        try {
-            const response = await fetch(linksURL);
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            const data = await response.json();
-            const directoryContainer = document.querySelector('.directory-container');
-            directoryContainer.innerHTML = '';
+fetch(url)
+  .then(response => {
+    if (!response.ok) throw new Error("Failed to fetch members.");
+    return response.json();
+  })
+  .then(data => {
+    data.members.forEach(member => {
+      const card = document.createElement('section');
+      card.classList.add('member-card');
 
-            data.forEach(member => {
-                const memberItem = document.createElement('div');
-                memberItem.classList.add('directory-item');
-                memberItem.innerHTML = `
-                    <img src="images/${member.image}" alt="${member.name}">
-                    <h3>${member.name}</h3>
-                    <p>${member.address}</p>
-                    <p>${member.phone}</p>
-                    <a href="${member.url}">${member.url}</a>
-                    <p>${member.membership_level}</p>
-                `;
-                directoryContainer.appendChild(memberItem);
-            });
-        } catch (error) {
-            console.error('Error fetching the member data:', error);
-        }
-    };
+      const name = document.createElement('h3');
+      name.textContent = member.name;
 
-    fetchData();
+      const logo = document.createElement('img');
+      logo.src = member.image;
+      logo.alt = `${member.name} logo`;
+      logo.loading = 'lazy';
 
-    const gridButton = document.querySelector('#grid');
-    const listButton = document.querySelector('#list');
-    const directoryContainer = document.querySelector('.directory-container');
+      const address = document.createElement('p');
+      address.textContent = `📍 ${member.address}`;
 
-    gridButton.addEventListener('click', () => {
-        directoryContainer.classList.add('grid');
-        directoryContainer.classList.remove('list');
+      const phone = document.createElement('p');
+      phone.textContent = `📞 ${member.phone}`;
+
+      const link = document.createElement('a');
+      link.href = member.url;
+      link.textContent = member.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+
+      card.append(name, logo, address, phone, link);
+      displayArea.appendChild(card);
     });
+  })
+  .catch(error => {
+    console.error('Error loading members:', error);
+  });
 
-    listButton.addEventListener('click', () => {
-        directoryContainer.classList.add('list');
-        directoryContainer.classList.remove('grid');
-    });
+// document.querySelector('#gridBtn').addEventListener('click', () => {
+//   displayArea.classList.add('grid-view');
+//   displayArea.classList.remove('list-view');
+// });
+
+// document.querySelector('#listBtn').addEventListener('click', () => {
+//   displayArea.classList.add('list-view');
+//   displayArea.classList.remove('grid-view');
+// });
+
+document.querySelector('#grid').addEventListener('click', () => {
+  const directory = document.querySelector('#directory');
+  directory.classList.add('grid');
+  directory.classList.remove('list');
 });
+
+document.querySelector('#list').addEventListener('click', () => {
+  const directory = document.querySelector('#directory');
+  directory.classList.add('list');
+  directory.classList.remove('grid');
+});
+
+

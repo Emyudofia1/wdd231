@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('data/spotlight.json')
+    fetch('.data/spotlight.json')
       .then(response => response.json())
       .then(data => {
         const container = document.querySelector('.spotlight-container');

@@ -1,94 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibom Chamber of Commerce Directory</title>
-    <meta name="description" content=" Ibom Chamber of Commerce Directory">
-    <meta name="author" content="Emediong Godwin Udofia">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/menu.css">
-    <link rel="stylesheet" href="styles/directory-base.css">
-    <link rel="stylesheet" href="styles/directory-larger.css">
-    <script src="scripts/menu.js" defer></script>
-    <script src="scripts/fetchMembers.js" defer></script>
-    <script src="scripts/theme-toggle.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico">
-    <meta property="og:title" content="portal home page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://emyudofia1.github.io/wdd231/chamber/images/Godswill_Akpabio_International_Stadium_-_front_view.jpg">
-    <meta property="og:url" content="https://emyudofia1.github.io/wdd231/chamber/directory.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Business Directory for the Ibom Chamber of Commerce" />
+  <meta property="og:title" content="Ibom Chamber Directory" />
+  <meta property="og:description" content="Discover businesses in the Ibom Chamber of Commerce." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/EkeminiSamuel/wdd231/main/chamber/images/og-ibom.jpg" />
+  <meta property="og:url" content="https://emyudofia1.github.io/wdd231/chamber/directory.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Directory - Ibom Chamber of Commerce</title>
+  <!-- <link rel="stylesheet" href="/chamber/styles/directory-base.css" /> -->
+  <link rel="stylesheet" href="styles/directory.css" />
+
+    <script src="/chamber/scripts/fetchmembers.js" defer></script>
 </head>
-
 <body>
-    <header>
-        
-        </div>
-        <div class="top-bar">
-            <div class="logo">
-              <img src="images/favicon.ico" alt="Ibom">
-              <div>
-                <h1>Ibom</h1>
-                <p>Chamber of Commerce</p>
-              </div>
-            </div>
-            <nav aria-label="Main navigation">
-              <a href="index.html" aria-current="page">Home</a>
-              <a href="../week01/chamber-site-plan.html">Site Plan</a>
-              <a href="directory.html">Directory</a>
-              <a href="join.html">Join</a>
-              <a href="discover.html">Discover</a>
-              <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
-            </nav>
-          </div>
+  <header>
+    <h1>Ibom Chamber of Commerce</h1>
+    <nav>
+      <button id="menu" aria-label="Toggle Menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Business Directory</h2>
+    <div class="menu">
+    <button id="grid">⏹️ Grid</button>
+    <button id="list">📄 List</button>
+    </div>
+    <div id="directory" class="grid"></div>
 
-
-    </header>
-
-    <main>
-        <div class="menu">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
-        </div>
-        <hr>
-        <article class="directory-container grid">
-            <!-- Directory items will be injected here by JavaScript -->
-        </article>
-    </main>
+    <section id="membersContainer" class="grid-view">
+      <!-- Cards will be injected here -->
+    </section>
+  </main>
+  <footer>
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-contact">
-                <strong>Ibom Chamber of Commerce</strong><br>
-                10 Udo Udoma Avenue<br>
-                Uyo, Akwa Ibom 520001<br>
-                info@ibomachamber.com<br>
-                (234) 803-123-4567
-            </div>
-    
-            <div class="footer-social">
-                <a href="#"><img src="images/youtube.jpg" alt="YouTube" width="32"></a>
-                <a href="#"><img src="images/twiter.png" alt="Twitter" width="32"></a>
-                <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn" width="32"></a>
-            </div>
-    
-            <div class="footer-meta">
-                <p>WDD231 Class Project</p>
-                <p>Emediong Udofia</p>
-                <p>&copy; 2025 Ibom Chamber of Commerce</p>
-                <div class="footer-meta">
-                <p>Last Modification:<span id="lastModified"></span></p>
-                </div>
-               
-            </div>
-        </div>
-        <script src="scripts/getdates.js"></script>
-    </footer>
-    
-</body>
+      <div class="footer-content">
+          <div class="footer-contact">
+              <strong>Ibom Chamber of Commerce</strong><br>
+              10 Udo Udoma Avenue<br>
+              Uyo, Akwa Ibom 520001<br>
+              info@ibomachamber.com<br>
+              (234) 803-123-4567
+          </div>
+  
+          <div class="footer-social">
+              <a href="#"><img src="/chamber/images/youtube.jpg" alt="YouTube" width="32"></a>
+              <a href="#"><img src="/chamber/images/twiter.png" alt="Twitter" width="32"></a>
+              <a href="#"><img src="/chamber/images/linkedin.jpg" alt="LinkedIn" width="32"></a>
+          </div>
+  
+          <div class="footer-meta">
+              <p>WDD231 Class Project</p>
+              <p>Emediong Udofia</p>
+              <p>&copy; 2025 Ibom Chamber of Commerce</p>
+              <div class="footer-meta">
+              <p>Last Modification:<span id="lastModified"></span></p>
+              </div>
+             
+          </div>
+      </div>
+      <script src="scripts/getdates.js"></script>
 
+   
+  </footer>
+   <script src="/chamber/scripts/directory.js" defer></script>
+</body>
 </html>
