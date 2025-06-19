@@ -1,4 +1,6 @@
-// Module file to export the reusable function
+// utils.js
+
+// Reusable function to create a flower card
 export function createFlowerCard(flower) {
   const card = document.createElement("div");
   card.classList.add("flower-card");
@@ -11,4 +13,14 @@ export function createFlowerCard(flower) {
     </div>
   `;
   return card;
+}
+
+// Reusable async function to fetch flower data from JSON
+export async function fetchFlowerData(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  const data = await response.json();
+  return data.flowers || [];
 }
