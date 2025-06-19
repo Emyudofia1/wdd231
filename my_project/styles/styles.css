@@ -1,0 +1,163 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #c2185b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #c2185b;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f8bbd0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #f8bbd0;
+  color: #333;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.flower-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.flower-card:hover {
+  transform: scale(1.03);
+}
+
+.flower-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.flower-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive Typography */
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  color: #c2185b;
+}
+
+/* Tips and Design Page */
+.tips-section {
+  margin-bottom: 2rem;
+}
+
+.tips-section h3 {
+  margin-bottom: 0.5rem;
+  color: #ad1457;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* just added */
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+}
+
+.modal-trigger {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #b30059;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-trigger:hover {
+  background-color: #99004d;
+}

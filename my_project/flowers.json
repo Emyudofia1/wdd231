@@ -1,0 +1,44 @@
+{
+  "flowers": [
+    {
+      "name": "Rose",
+      "image": "irose.avif",
+      "description": "A symbol of love and beauty, roses come in a variety of colors and fragrances. Roses are timeless symbols of love, beauty, and romance. With their velvety petals and enchanting fragrance, roses come in a spectrum of colors, each carrying its own meaning. Whether in a bouquet or a garden, roses bring classic elegance to any setting."
+    },
+    {
+      "name": "Tulip",
+      "image": "tulip.avif",
+      "description": "Tulips are spring-blooming perennials known for their vibrant, cup-shaped flowers. Originating from Central Asia and popularized in the Netherlands, tulips symbolize perfect love and elegance. With a wide variety of colors and shapes, they are a favorite for gardens, bouquets, and floral arrangements. Tulips thrive in cool climates and are celebrated for their simplicity and timeless beauty."
+    },
+    {
+      "name": "Sunflower",
+      "image": "sunflower.webp",
+      "description": "Sunflowers turn toward the sun and are known for their cheerful yellow petals. Sunflowers are cheerful and radiant blooms that follow the sun's path throughout the day. Known for their large, golden faces and tall stems, they symbolize positivity, warmth, and loyalty. Sunflowers brighten gardens and hearts alike."
+    },
+    {
+      "name": "Orchid",
+      "image": "orchid.avif",
+      "description": "Elegant and exotic, orchids symbolize luxury, beauty, and strength. Orchids are exotic and graceful flowers celebrated for their intricate shapes and long-lasting blooms. Representing luxury, strength, and beauty, orchids come in a variety of species and colors, making them a prized choice for decor and gifts."
+    },
+    {
+      "name": "Lavender",
+      "image": "lavender.avif",
+      "description": "Lavender is known for its calming scent and lovely purple blooms. It is cherished for its soothing scent and delicate purple blooms. Often used in aromatherapy and skincare, it symbolizes calmness, purity, and grace. Lavender fields are not only beautiful but also relaxing to the soul."
+    },
+    {
+      "name": "Peony",
+      "image": "peony.avif",
+      "description": "Peonies are lush and fragrant flowers that bloom in late spring and early summer. They are  known for their full, ruffled petals. They are beloved for symbolizing romance, prosperity, and honor. Peonies make a stunning focal point in gardens and arrangements."
+    },
+    {
+      "name": "Daisy",
+      "image": "daisy.avif",
+      "description": "Daisies are cheerful and simple flowers. They are charming flowers with white petals and sunny yellow centers. They symbolize innocence, new beginnings, and cheerfulness. Their clean, fresh look makes them a popular choice for casual bouquets and countryside gardens."
+    },
+    {
+      "name": "Hydrangea",
+      "image": "hydrangea.avif",
+      "description": "Hydrangeas are full and voluminous blooms that vary in color based on soil pH. They are bold, bushy flowers with large, globe-shaped blooms in shades of blue, pink, and white. They represent gratitude, grace, and heartfelt emotions. Hydrangeas add volume and color to landscapes and floral displays."
+    }
+  ]
+}

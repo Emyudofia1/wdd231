@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Bloom & Petal</title>
+  <link rel="stylesheet" href="/my_project/styles/styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Bloom & Petal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Flower Gallery</a></li>
+        <li><a href="care.html">Care & Design Tips</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you! Please fill out the form below.</p>
+    </section>
+
+    <section class="contact-form">
+        <form id="contactForm" action="thankyou.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bloom & Petal. All rights reserved.</p>
+    <p>WDD231 Class Project<br>Emediong Udofia</p>
+  </footer>
+
+  <script src="/my_project/scripts/contact.js"></script>
+</body>
+
+</html>
